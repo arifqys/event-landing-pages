@@ -1,0 +1,437 @@
+// Variable
+$green: #45e37a
+$blue: #12c3da
+@font-face 
+	font-family: 'KotoriRose-Regular'
+	src: url('../font/KotoriRose-Regular.otf')
+@font-face 
+	font-family: 'KotoriRose-Bold'
+	src: url('../font/KotoriRose-Bold.otf')
+$reg: KotoriROse-Regular
+$bold: KotoriRose-Bold
+
+// LOADER
+body
+    overflow: hidden
+.loaded
+    overflow-y: scroll
+.loaded #loader-bg
+    opacity: 0
+    visibility: hidden
+    transition: all 0.5s ease-in-out
+.loaded .container-spinner
+    display: none
+#loader-bg
+    width: 100%
+    height: 100vh
+    background-color: #000000
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 100
+.container-spinner
+    position: absolute
+    left: 50%
+    top: 45%
+    transform: translate(-50%, -50%)
+.logo-spinner
+    background-image: url(../img/logo-spinner.png)
+    width: 64px
+    height: 64px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+.lds-dual-ring
+    display: inline-block
+    width: 150px
+    height: 150px
+.lds-dual-ring:after
+    content: " "
+    display: block
+    width: 150px
+    height: 150px
+    margin: 1px
+    border-radius: 50%
+    border: 5px solid #fff
+    border-color: #fff transparent #fff transparent
+    animation: lds-dual-ring 1.2s linear infinite
+
+@keyframes lds-dual-ring
+    0% 
+        transform: rotate(0deg)
+  
+    100%
+        transform: rotate(360deg)
+  
+// GENERAL
+body
+    font-family: $reg
+    overflow-x: hidden
+h1
+    font-family: $bold
+    font-size: 3em
+h2
+    font-size: 2em
+section
+    min-height: 100vh
+    position: relative
+    padding-bottom: 120px
+a
+    color: #ffffff
+    transition: color 0.1s ease-in-out
+a:hover, a:active, a:focus
+    color: $green
+.a-button:hover
+    color: #ffffff
+button
+    font-family: $bold
+    background: linear-gradient(to right, $green, $blue)
+    padding: 15px 30px
+    border: none
+    border-radius: 5px
+    letter-spacing: 1px
+    margin: 1em 0
+    transition: all 0.3s ease-in-out
+button:hover
+    padding: 15px 50px
+.text-center
+    text-align: center
+.text-right
+    text-align: right
+.header-event
+    background-size: cover
+    background-position: bottom center
+    padding: 80px 0
+.logo-event, .title-event
+    display: inline-block
+.desc-event
+    font-size: 18px
+    line-height: 22px
+    margin-top: 70px
+    padding: 0 120px
+    p
+        margin-bottom: 20px
+.footer-event
+    background-size: cover
+    background-position: top center
+    width: 100%
+    height: 100px
+    position: absolute
+    bottom: 0
+    
+// PLACE & DATE
+.place-date
+    margin: 5px 0
+    line-height: 35px
+    i
+        background: linear-gradient(45deg, $blue, $green)
+        color: #ffffff
+        width: 35px
+        height: 35px
+        text-align: center
+        line-height: 35px
+        border-radius: 50%
+        margin-right: 5px
+
+// HOME
+#home
+    background-image: url(../img/bg/bg-home.png)
+    background-size: cover
+    background-position: left center
+    color: #ffffff
+    .header
+        background-image: url(../img/bg/home-header.png)
+        background-size: cover
+        background-position: bottom center
+        margin-bottom: 100px
+.dropdown
+    position: relative
+    display: inline-block
+    text-align: left
+.dropbtn
+    transition: all 0.1s ease-in-out
+.dropdown-content
+    display: none
+    position: absolute
+    background-color: #f1f1f1
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.1)
+    margin-top: 20px
+    z-index: 1
+.dropdown-content a 
+    color: #000000
+    display: block
+    padding: 15px 20px
+.dropdown-content a:hover
+    background-color: #ddd
+.dropdown:hover .dropdown-content
+    display: block
+.dropdown:hover .dropbtn
+    color: $green
+    padding-bottom: 20px
+.logo
+    width: 200px
+    padding: 80px 0
+nav
+    font-family: $bold
+    text-align: right
+nav.dekstop ul
+    li
+        display: inline-block
+        margin:  30px 20px
+nav.mobile
+    position: fixed
+    top: 30px
+    right: 30px
+    background-color: $green
+    color: #ffffff
+    border-radius: 3px
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.1)
+    z-index: 10
+    ul
+        margin: 0
+        padding: 0
+        li a
+            display: block
+            color: #ffffff
+            text-decoration: none
+        li a:hover
+            color: rgba(0, 0, 0, 0.5)
+            font-weight: bolder
+    i.fas
+        display: inline-block
+        padding: 15px
+    i.fas:hover
+        color: rgba(0, 0, 0, 0.3)
+        font-weight: bolder
+    //Hide menu
+    i.fa-bars
+        display: inline-block
+    i.fa-times
+        display: none
+    //Show menu
+    div.active
+        i.fa-bars
+            display: none
+        i.fa-times
+            display: inline-block
+    //Hide menu
+    ul
+        padding-bottom: 0
+        li a
+            width: 0
+            height: 0
+            padding: 0
+            opacity: 0
+            visibility: hidden
+    //Show menu
+    ul.active
+        padding-bottom: 15px
+        li a
+            width: initial
+            height: initial
+            padding: 10px 20px 10px 50px
+            opacity: 1
+            visibility: visible
+            transition: padding 0.3s, opacity 0.2s 0.3s, visibility 0s 0.3s
+.semarak
+    display: inline-block
+.semarak:after
+    content: ""
+    background: linear-gradient(to right, $blue, $green)
+    display: block
+    height: 3px
+    margin-top: 0.5em
+.maritimeisnow
+    background: -webkit-linear-gradient($blue, $green)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    font-size: 1.5em
+    font-style: italic
+    font-weight: bold
+    letter-spacing: 2px
+    color: 
+    margin-top: 0.5em
+
+// SFSC
+#sfsc
+    background-image: url(../img/bg/bg-sfsc.png)
+    background-size: cover
+    background-position: left bottom
+    .header-event
+        background-image: url(../img/bg/sfsc-header.png)
+    .logo-event
+        position: relative
+        bottom: 50px
+    .footer-event
+        background-image: url(../img/bg/sfsc-footer.png)
+
+// DI
+#di
+    background-image: url(../img/bg/bg-di.png)
+    background-size: cover
+    background-position: right bottom
+    .header-event
+        background-image: url(../img/bg/di-header.png)
+    .logo-event
+        position: relative
+        bottom: 20px
+    .footer-event
+        background-image: url(../img/bg/di-footer.png)
+
+// NASDARC
+#nasdarc
+    background-image: url(../img/bg/bg-nasdarc.png)
+    background-size: cover
+    background-position: left bottom
+    .header-event
+        background-image: url(../img/bg/nasdarc-header.png)
+    .logo-event
+        position: relative
+        bottom: 50px
+    .footer-event
+        background-image: url(../img/bg/nasdarc-footer.png)
+
+// SAMPANESIA
+#sampanesia
+    background-image: url(../img/bg/bg-sampanesia.png)
+    background-size: cover
+    background-position: right bottom
+    color: #ffffff
+    .header-event
+        background-image: url(../img/bg/sampanesia-header.png)
+    .logo-event
+        position: relative
+        bottom: 20px
+    .footer-event
+        background-image: url(../img/bg/sampanesia-footer.png)
+
+// FOOTER
+footer
+    background-image: url(../img/bg/footer.png)
+    text-align: center
+    padding: 80px 0 40px 0
+    img
+        width: 200px
+        margin: auto
+        margin-bottom: 50px
+    ul
+        font-size: 30px
+        li
+            display: inline-block
+            margin: 0 5px
+            a
+                display: inline-block
+                background-color: #ffffff
+                color: #000000
+                width: 50px
+                height: 50px
+                line-height: 50px
+                border-radius: 50%
+                transition: all 0.1s ease-in-out
+            a:hover
+                background-color: $blue
+                color: #ffffff
+.copyright
+    color: #ffffff
+    margin-top: 40px
+
+// SPONSOR
+#sponsor
+    text-align: center
+    padding: 50px 0
+    .row > div
+        min-height: 100px
+
+
+// CSS Media Query
+
+// Additional
+@media (min-width: 1600px) // Large screen dekstop
+    #home .header
+        padding-bottom: 60px
+    body
+        font-size: 20px
+    h1
+        font-size: 4em
+    .desc-event
+        padding: 0 150px
+        line-height: 30px
+    .footer-event
+        height: 200px
+@media (max-width: 320px) // Small screen mobile
+    #home .header
+        margin-bottom: 50px
+
+
+// LG
+@media (max-width: 992px)
+    // Events
+    .desc-event
+        padding: 0 100px
+        p
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0))
+            border-radius: 5px
+            padding: 30px
+    #sampanesia .desc-event p
+        background: none
+    
+
+// MD
+@media (max-width: 768px)
+    // Events
+    section
+        padding-bottom: 200px
+    section#home
+        padding-bottom: 0
+    .header-event
+        padding-bottom: 120px
+    .container-logo-event
+        text-align: center
+    .desc-event
+        padding: 0 50px
+
+
+// SM
+@media (max-width: 576px)
+    // Home
+    h1
+        font-size: 2.5em
+    .logo
+        padding: 60px 0 100px 0
+    .semarak
+        font-size: 14px
+    // Events
+    .logo-event, .title-event
+        padding: 0 20px
+    .desc-event
+        padding: 0 20px
+        p
+            font-size: 16px
+            padding: 15px
+
+
+// XS
+@media (max-width: 360px)
+    // Home
+    h1
+        font-size: 2em
+    .logo
+        padding: 40px 20px
+    .semarak
+        font-size: 10px
+    // Events
+    .desc-event p
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0))
+        font-size: 14px
+        padding: 10px 
+    // Footer
+    footer
+        ul
+            font-size: 25px
+            li
+                margin: 3px
+                a
+                    width: 40px
+                    height: 40px
+                    line-height: 40px

@@ -1,2 +1,2 @@
 # landing-pages
-My landing pages portfolio.
+Collection of  landing pages portfolio.

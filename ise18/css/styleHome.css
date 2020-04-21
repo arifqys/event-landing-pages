@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*===========================*/
+@font-face{
+	font-family: Metropolis;
+	src: url(../fonts/Metropolis-Regular.otf);
+	font-family: Metropolis-Bold;
+	src: url(../fonts/Metropolis-Bold.otf);
+}
+*{
+	font-family: Metropolis;
+}
+h1{font-family: Metropolis-Bold;}
+.glyphicon{
+	color: rgba(255,149,172,1.00);
+	text-align: center;
+} .glyphicon:hover, .glyphicon:active, .glyphicon:focus{
+	color: white;
+}
+.btn {
+    margin-bottom: 2px;
+	background: rgba(235,235,235,1.00);
+	border: 0px;
+	max-height: none;
+	max-width: none;
+} .btn:hover{
+	background: rgba(255,149,172,1.00);
+	border: 0px;
+} .btn:focus{
+	background: rgba(223,98,122,1.00);
+} .btn:active{
+	background: rgba(185,83,85,1.00);
+}
+
+
+input[type=range]{
+	width: 100%;
+	-webkit-appearance: none;
+	background: transparent;
+	margin-bottom: 15px;
+}
+input[type=range]::-webkit-slider-runnable-track{
+	height: 12px;
+	width: 100%;
+	-webkit-appearance: none;
+	background: rgba(239,239,239,1.00);
+	border-radius: 10px;
+} input[type=range]:focus::-webkit-slider-runnable-track,
+input[type=range]::selection{
+	background: rgba(205,205,205,1.00);
+}
+input[type=range]::-webkit-slider-thumb{
+	height: 23px;
+	width: 23px;
+	-webkit-appearance: none;
+	background:rgba(169,114,189,1.00);
+	border-radius: 15px;
+	vertical-align: bottom;
+	margin: -5px;
+} input[type=range]:focus::-webkit-slider-thumb{
+	background: rgba(97,70,102,1.00);
+}
+input[type=range]:focus{
+	outline: none;
+}
+
+
+/*-------Latar Belakang---------*/
+
+.panel-info>.panel-heading{
+    color: #a18ad9;
+  /*  background-color: #FFFFFF; */
+}
+.well{
+	background: rgba(0,0,0,0.00);
+}
+
+#latar{
+	position: absolute;
+	z-index: -2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 150%;
+}
+#warna-latar-atas{
+	width: 100%;
+	height: 200px;
+	background: rgba(237,177,191,1.00);
+	position: relative;
+	z-index: -4;
+}
+#latar-atas{
+	top: 0;
+	height: 200px;
+}
+#awan{
+	position: absolute;
+	top: 0;
+	background-image: url("../img/bg home/awan.png");
+	background-size: cover;
+	width: 100%;
+	height: 250px;
+	background-position: center;
+}
+#pesawat{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#pesawat-kiri{
+	position: absolute;
+	top: 20px;
+	left: 8%;
+	background-image: url("../img/bg home/pesawat-kiri.png");
+	background-size: cover;
+	background-position: center;
+	width: 200px;
+	height: 123px;
+}
+#pesawat-kanan{
+	position: absolute;
+	top: 50px;
+	right: 8%;
+	background-image: url("../img/bg home/pesawat-kanan.png");
+	background-size: cover;
+	background-position: center;
+	width: 70px;
+	height: 55px;
+}
+
+#latar-tengah{
+	z-index: 2;
+	width: 100%;
+}
+#pesawat-2{
+	background-image: url("../img/bg home/pesawat-2.png");
+	background-size: cover;
+	background-position: center;
+	width: 50px;
+	height: 40px;
+}
+
+#pesawat-1{
+	background-size: cover;
+	background-position: center;
+	width: 40px;
+	height: 30px;
+	right: 400px;
+	position: absolute;
+	background-image: url("../img/bg home/pesawat-1.png");
+}
+
+#warna-latar-bawah{
+	background: white;
+	width: 100%;
+	height: 300px;
+	position: relative;
+	z-index: -3;
+}
+
+#latar-bawah{
+	position: absolute;
+	height: 580px;
+	width: 100%;
+}
+#pelangi{
+	position: absolute;
+	background-image: url("../img/bg home/pelangi.png");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 500px;
+}
+#orang{
+	position: absolute;
+	right: 8%;
+	background-image: url("../img/bg home/orang.png");
+	background-size: cover;
+	background-position: center;
+	width: 150px;
+	height: 200px;
+}
+
+#copyright{
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 5%;
+	color: #763d89;
+	width: 100%;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 991px) {
+#webcodecam-canvas, #scanned-img {
+    background-color: #2d2d2d;
+    width: 600px;
+    height: 500px;
+    }
+	#latar-tengah{
+		height: 1250px;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+#webcodecam-canvas, #scanned-img {
+    background-color: #2d2d2d;
+    width: 600px;
+    height: 500px;
+    }
+		.panel-info{
+			position: absolute;
+			top: 30%;
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+	#latar-tengah{
+		height: 1350px;
+	}
+	#user{
+		width: 100%;
+		text-align: center;
+	}#camera-select, .form-group{
+		margin-left: 20%;
+		margin-top: 10px;
+	}
+	.glyphicon, .btn{
+		font-size: 120%;
+		width: 50px;
+		height: 50px;
+		padding-top: 6px;
+		padding-left: 0;
+	}
+	input[type=range]:hover::-webkit-slider-runnable-track{
+		background: rgba(205,205,205,1.00);
+	}
+	input[type=range]:hover::-webkit-slider-thumb{
+	background: rgba(97,70,102,1.00);
+	}
+}
+@media only screen and (min-width: 992px) {
+    /*
+    #webcodecam-canvas, #scanned-img {
+        background-color: #2d2d2d;
+        width: 500px;
+        height: 400px;
+		margin-top: 30px;
+        }
+		.panel-info{
+			position: absolute;
+			top: 30%;
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+		#latar-tengah{
+			height: 400px;
+		}
+		*/
+    }
+
+@media only screen and (max-width: 550px) {
+#webcodecam-canvas, #scanned-img {
+    background-color: #2d2d2d;
+    width: 250px;
+    height: 250px;
+	margin-top: 5px;
+    }
+	#latar-tengah{
+		height: 850px;
+	}
+	#latar-bawah{
+		height: 450px;
+	}
+	#pelangi{
+		height: 450px;
+	}
+#pesawat-kiri{
+	position: absolute;
+	top: 70px;
+	left: 8%;
+	background-image: url("../img/bg home/pesawat-kiri.png");
+	background-size: cover;
+	background-position: center;
+	width: 160px;
+	height: 100px;
+}
+#pesawat-kanan{
+	position: absolute;
+	top: 40px;
+	right: 8%;
+	background-image: url("../img/bg home/pesawat-kanan.png");
+	background-size: cover;
+	background-position: center;
+	width: 50px;
+	height: 40px;
+}
+	#pesawat-1{
+		position: absolute;
+		right: 300px;
+		top: 90px;
+	}#pesawat-2{
+		height: 22px;
+		width: 30px;
+		left: 15px;
+		margin-top: 50px;
+		position: absolute;
+	}
+
+	.glyphicon, .btn{
+	}
+}
+
+#QR-Code, .panel-info, .panel-heading, .panel-body, .panel{
+	border: 0px rgba(0,0,0,0) solid;
+	background: rgba(0,0,0,0.00);
+}
+

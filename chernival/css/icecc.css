@@ -1,0 +1,244 @@
+/* General */
+html, body {
+    background-color: #eeeeee;
+}
+h1 {
+    font-size: 4em;
+}
+h3 {
+    font-size: 24px;
+}
+
+/* Home */
+#home {
+    height: initial;
+    max-height: none;
+}
+#icecc-home {
+    background-image: url('../img/icecc/bg.png');
+    background-position: bottom center;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 200px;
+}
+#icecc-home .container {
+    color: #ffffff;
+    padding-top: 200px;
+}
+#icecc-home .container h1 {
+    font-family: 'Brandon_blk';
+    font-size: 3em;
+    line-height: 1em;
+    margin: 15px 0;
+}
+#icecc-home .register {
+    background-color: rgba(255, 114, 38, 1);
+    font-size: 24px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+#icecc-home .rules {
+    background-color: rgba(255, 255, 255, 1);
+    color:  rgba(255, 114, 38, 1);
+    font-size: 24px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Timeline */
+#icecc-timeline .timeline {
+    width: 100%;
+    z-index: 1;
+}
+#icecc-timeline .scroll {
+    overflow-x: scroll;
+}
+#icecc-timeline .scroll::-webkit-scrollbar {
+    height: 18px;
+    width: 12px;
+}
+#icecc-timeline .scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+#icecc-timeline .scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+#icecc-timeline .row {
+    margin: 0;
+    width: 2220px;
+}
+#icecc-timeline .col-2 {
+    margin: 10px 0 30px 0;
+}
+#icecc-timeline .card {
+    background-color: #ffffff;
+    min-height: 300px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.1s ease-in-out;
+}
+#icecc-timeline .card:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+#icecc-timeline .card span.hr {
+    background-color: rgba(0, 138, 252, 1);
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/*Prize */
+#icecc-prize .scroll {
+    overflow-x: scroll;
+}
+#icecc-prize .scroll::-webkit-scrollbar {
+    height: 18px;
+    width: 12px;
+}
+#icecc-prize .scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+#icecc-prize .scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+#icecc-prize .row {
+    margin: 0;
+    width: 3330px;
+}
+#icecc-prize h3 {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+#icecc-prize p {
+    margin: 0;
+}
+#icecc-prize .col-1 {
+    margin: 30px 0;
+}
+#icecc-prize .card {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 30px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease-in-out
+}
+#icecc-prize .card:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out
+}
+#icecc-prize .side {
+    top: 50px;
+}
+#icecc-prize h3.title-winner {
+    font-size: 2em;
+}
+
+/* FAQ */
+#icecc-faq .container {
+    background-color: #263a61;
+    color: #ffffff;
+    padding: 50px;
+    max-width: 1200px !important;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+#icecc-faq h1 {
+    margin: 0;
+    padding: 0;
+}
+#icecc-faq .accordion {
+    background-color: #263a61;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0;
+    padding: 18px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+} 
+#icecc-faq .panel {
+    padding: 0 18px;
+    background-color: #263a61;
+    color: #ffffff;
+    display: none;
+    max-height: 0;
+    max-width: 800px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+#icecc-faq .panel p {
+    margin-top: 0;
+}
+#icecc-faq span.hr {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+/* Gallery */
+.gallery {
+    text-align: center;
+}
+.gallery img {
+    transition: 1s;
+    padding: 5px;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+/* Video */
+iframe {
+    display: block;
+    margin: auto;
+}
+
+/* CSS Media Query */
+@media (max-width: 1200px) {
+    #icecc-timeline .scroll::-webkit-scrollbar {
+        height: 6px;
+    }
+    #icecc-timeline .card {
+        transition: none;
+    }
+    #icecc-timeline .card:hover {
+        transform: none;
+        transition: none;
+    }
+    #icecc-prize .scroll::-webkit-scrollbar {
+        height: 6px;
+    }
+    #icecc-prize .card {
+        transition: none;
+    }
+    #icecc-prize .card:hover {
+        transform: none;
+        transition: none;
+    }
+}
+@media (max-width: 768px) {
+    #icecc-prize .side {
+        top: 0;
+    }
+}

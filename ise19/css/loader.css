@@ -1,0 +1,31 @@
+.container-loader {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background-color: #080e25;
+	z-index: 100;
+}
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+body {
+    overflow-y: hidden;
+}
+.loaded {
+    overflow-y: scroll;
+}
+.loaded .container-loader {
+	opacity: 0;
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+}
+.loaded .loader{
+	opacity: 0;
+	transition: all 1s ease-in-out;
+	visibility: hidden;
+}

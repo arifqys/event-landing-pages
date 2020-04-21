@@ -1,0 +1,252 @@
+/* General */
+html, body {
+    background-color: #eeeeee;
+}
+h1 {
+    font-size: 4em;
+}
+h3 {
+    font-size: 24px;
+}
+
+/* Home */
+#home {
+    height: initial;
+    max-height: none;
+}
+#nopec-home {
+    background-image: url('../img/nopec/bg.png');
+    background-position: bottom center;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 200px;
+}
+#nopec-home .container {
+    color: #ffffff;
+    padding-top: 200px;
+}
+#nopec-home .container h1 {
+    font-family: 'Brandon_blk';
+    font-size: 3em;
+    line-height: 1em;
+    margin: 15px 0;
+}
+#nopec-home .register {
+    background-color: rgba(61, 155, 233, 1);
+    font-size: 24px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+#nopec-home .syllabus, #nopec-home .example, #nopec-home .rules {
+    background-color: rgba(255, 255, 255, 1);
+    color:  rgba(61, 155, 233, 1);
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Timeline */
+#nopec-timeline .timeline {
+    width: 100%;
+    z-index: 1;
+}
+#nopec-timeline .scroll {
+    overflow-x: scroll;
+}
+#nopec-timeline .scroll::-webkit-scrollbar {
+    height: 18px;
+    width: 12px;
+}
+#nopec-timeline .scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+#nopec-timeline .scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+#nopec-timeline .row {
+    margin: 0;
+    width: 2200px;
+}
+#nopec-timeline .col-2 {
+    margin: 10px 0 30px 0;
+}
+#nopec-timeline .card {
+    background-color: #ffffff;
+    min-height: 300px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.1s ease-in-out;
+}
+#nopec-timeline .card:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+#nopec-timeline .card span.hr {
+    background-color: rgba(255, 160, 78, 1);
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/*Prize */
+#nopec-prize .scroll::-webkit-scrollbar {
+    height: 18px;
+    width: 12px;
+}
+#nopec-prize .scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+#nopec-prize .scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+#nopec-prize .row {
+    margin: 0;
+    width: 1110px;
+}
+#nopec-prize h3 {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+#nopec-prize p {
+    margin: 0;
+}
+#nopec-prize .col-4 {
+    margin: 30px 0;
+}
+#nopec-prize .card {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 30px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.1s ease-in-out
+}
+#nopec-prize .card:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out
+}
+#nopec-prize .side {
+    top: 50px;
+}
+#nopec-prize h3.title-winner {
+    font-size: 2em;
+}
+
+/* FAQ */
+#nopec-faq .container {
+    background-color: #263a61;
+    color: #ffffff;
+    padding: 50px;
+    max-width: 1200px !important;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+#nopec-faq h1 {
+    margin: 0;
+    padding: 0;
+}
+#nopec-faq .accordion {
+    background-color: #263a61;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0;
+    padding: 18px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    position: relative;
+} 
+#nopec-faq .panel {
+    padding: 0 18px;
+    background-color: #263a61;
+    color: #ffffff;
+    display: none;
+    max-height: 0;
+    max-width: 800px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+#nopec-faq .panel p {
+    margin-top: 0;
+}
+#nopec-faq span.hr {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+#nopec-faq i.fa-chevron-down {
+    font-size: 0.8em;
+    color: rgba(255, 160, 78, 1);
+    position: absolute;
+    right: 20px;
+}
+
+/* Gallery */
+.gallery {
+    text-align: center;
+}
+.gallery img {
+    transition: 1s;
+    padding: 5px;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+/* Video */
+iframe {
+    display: block;
+    margin: auto;
+}
+
+/* CSS Media Query */
+@media (max-width: 1200px) {
+    #nopec-timeline .scroll::-webkit-scrollbar {
+        height: 6px;
+    }
+    #nopec-timeline .card {
+        transition: none;
+    }
+    #nopec-timeline .card:hover {
+        transform: none;
+        transition: none;
+    }
+    #nopec-prize .scroll::-webkit-scrollbar {
+        height: 6px;
+    }
+    #nopec-prize .scroll {
+        overflow-x: scroll;
+    }
+    #nopec-prize .card {
+        transition: none;
+    }
+    #nopec-prize .card:hover {
+        transform: none;
+        transition: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #nopec-prize .side {
+        top: 0;
+    }
+}

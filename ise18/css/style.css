@@ -1,0 +1,1009 @@
+/*Reset Browsers Defaults*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+button:focus {
+	outline: 0;
+}
+
+/*Loading*/
+
+.loading-sets {
+	position: absolute;
+	left: 50%;
+	top: 46%;
+	transform: translate(-50%, -50%);
+}
+
+.loading-mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 100;
+}
+
+.ld {
+	padding: 20px 0 0 60px;
+}
+
+.loading {
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	border-radius: 100%;
+	float: left;
+	margin-right: 10px;
+}
+
+.loading-0 {
+	animation: bounce 1s infinite ease;
+	animation-delay: 0.1s;
+	background: #225D6B;
+}
+
+.loading-1 {
+	animation: bounce 1s infinite ease;
+	animation-delay: 0.3s;
+	background: #225D6B;
+}
+
+.loading-2 {
+	animation: bounce 1s infinite ease;
+	animation-delay: 0.5s;
+	background: #225D6B;
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+}
+
+body {
+	overflow: hidden;
+	animation: fadein 1s;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.loaded {
+	overflow-y: scroll;
+}
+
+.loaded .loading-sets {
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.loaded .loading-mask {
+	opacity: 0;
+	transition: all 1s ease-in-out;
+	visibility: hidden;
+}
+
+/*General*/
+
+@font-face {
+	font-family: 'Metropolis-Bold';
+	src: url('../font/Metropolis-Bold.otf');
+}
+
+@font-face {
+	font-family: 'Metropolis-Medium';
+	src: url('../font/Metropolis-Medium.otf');
+}
+
+@font-face {
+	font-family: 'HKGrotesk';
+	src: url('../font/HKGrotesk-Medium.otf');
+}
+
+body {
+	font-family: 'HKGrotesk', sans-serif;
+	font-size: 18px;
+	text-align: justify;
+	color: #fff;
+}
+
+.full-section {
+	min-height: 100vh;
+	background-size: cover;
+	background-position: top;
+	background-position-y: 10px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.container,
+.container-fluid {
+	min-height: 100vh;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.container-head {
+	text-align: center;
+}
+
+.col-md-6 {
+	position: relative;
+	min-height: 200px;
+}
+
+h1 {
+	font-family: 'Metropolis-Bold', sans-serif;
+	font-size: 36px;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 50px;
+}
+
+h1.title-section {
+	background-color: #e64282;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 40px;
+	-webkit-box-shadow: 3px 3px 2px 0px rgba(249, 98, 221, 1);
+	-moz-box-shadow: 3px 3px 2px 0px rgba(249, 98, 221, 1);
+	box-shadow: 3px 3px 2px 0px rgba(249, 98, 221, 1);
+	display: inline-block;
+	margin: 50px auto;
+}
+
+.asset {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+button {
+	background-color: #e64282;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 40px;
+	-webkit-box-shadow: 3px 3px 2px 0px rgba(249, 98, 221, 1);
+	-moz-box-shadow: 3px 3px 2px 0px rgba(249, 98, 221, 1);
+	box-shadow: 3px 3px 2px 0px rgba(249, 98, 221, 1);
+}
+
+button:hover {
+	background-color: #fff;
+	transition: all 0.5s;
+}
+
+a.button:hover {
+	color: #e64282;
+}
+
+/*Home*/
+
+#home {
+	background-color: #f8c6c2;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#home .logo-ise {
+	width: 150px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+#home .wrapper {
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	z-index: 2;
+}
+
+#home h1 {
+	font-size: 48px;
+	text-align: left;
+	text-shadow: 2px 2px #aa5e7f;
+	line-height: 120%;
+}
+
+#home .socmed {
+	background-image: url(../img/socmed.png);
+	width: 80px;
+	height: 212px;
+	top: 50%;
+	font-size: 24px;
+	padding-top: 50px;
+}
+
+#home .socmed li {
+	margin-left: 10px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+#home .socmed li a:hover {
+	color: #fff;
+	text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
+	transition: all 0.2s ease-in-out;
+}
+
+.anihome1 {
+	background-image: url(../img/animation\ home/1.png);
+	width: 408px;
+	height: 438px;
+	top: 20%;
+	left: 60%;
+	animation-name: floating;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	z-index: 1;
+}
+
+.anihome2 {
+	background-image: url(../img/animation\ home/2.png);
+	width: 169px;
+	height: 58px;
+	top: 20%;
+	left: 50%;
+	animation-name: anihome2;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+.anihome3 {
+	background-image: url(../img/animation\ home/3.png);
+	width: 86px;
+	height: 29px;
+	top: 30%;
+	left: 50%;
+	animation-name: anihome3;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+/*About*/
+
+#about {
+	background-color: #f8c6c2;
+	background-image: url(../img/bg-about.png);
+	line-height: 150%;
+}
+
+.description img {
+	position: absolute;
+	left: -70px;
+}
+
+.description {
+	width: 400px;
+	text-align: left;
+	position: absolute;
+	top: 200px;
+	left: 70px;
+}
+
+.bhinneka img {
+	position: absolute;
+	left: -50px;
+}
+
+.bhinneka {
+	width: 300px;
+	text-align: left;
+	position: absolute;
+	top: 300px;
+	right: 50px;
+}
+
+/*Bionix & Icon*/
+
+#bionix {
+	background-image: url(../img/bg-bionix.png);
+}
+
+#icon {
+	background-image: url(../img/bg-icon.png);
+}
+
+#bionix .container-head {
+	text-align: left;
+}
+
+#icon .container-head {
+	text-align: right;
+}
+
+#bionix img,
+#icon img {
+	width: 400px;
+	margin: 50px 0;
+}
+
+#bionix .wrapper,
+#icon .wrapper {
+	background-color: #e64282;
+	border-radius: 20px;
+	padding: 15px;
+	-webkit-box-shadow: 3px 3px 2px 0px rgba(249, 98, 221, 1);
+	-moz-box-shadow: 3px 3px 2px 0px rgba(249, 98, 221, 1);
+	box-shadow: 3px 3px 2px 0px rgba(249, 98, 221, 1);
+	margin-top: 100px;
+	line-height: 150%;
+}
+
+#bionix button,
+#icon button {
+	margin-top: 30px;
+}
+
+.container-button {
+	text-align: right;
+}
+
+.anibionix {
+	background-image: url(../img/animation\ bionix/1.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 629px;
+	height: 452px;
+	margin: auto;
+	animation-name: floating;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.aniicon {
+	background-image: url(../img/animation\ icon/1.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 574px;
+	height: 368px;
+	margin: auto;
+	animation-name: floating;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+/*Gallery*/
+
+#gallery {
+	overflow: hidden;
+}
+
+.container-carousel {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery {
+	position: relative;
+	width: 155vmin;
+	height: 75vmin;
+	border: 1vmin solid #225b6d;
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+.wrapper-carousel {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.item {
+	width: 100%;
+	height: 100%;
+	flex-shrink: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.arrow {
+	position: absolute;
+	width: 10%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	opacity: 1;
+	background-color: rgba(255, 255, 255, 0);
+	transition: opacity 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+
+.arrow:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.arrow:before {
+	content: '';
+	display: block;
+	width: 0px;
+	height: 0px;
+}
+
+.arrow--left {
+	left: 0;
+	top: 0;
+}
+
+.arrow--left:before {
+	border: 3vmin solid transparent;
+	border-right: 3vmin solid #db5461;
+	border-left: 0;
+}
+
+.arrow--right {
+	right: 0;
+	top: 0;
+}
+
+.arrow--right:before {
+	border: 3vmin solid transparent;
+	border-left: 3vmin solid #db5461;
+	border-right: 0;
+}
+
+.arrow--hidden {
+	opacity: 0;
+	cursor: default;
+}
+
+.anigallery1,
+.anigallery3 {
+	background-image: url(../img/animation\ gallery//1.png);
+	width: 169px;
+	height: 57px;
+	top: 50px;
+	animation-name: flying-right;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.anigallery2,
+.anigallery4 {
+	background-image: url(../img/animation\ gallery//2.png);
+	width: 110px;
+	height: 37px;
+	top: 90px;
+	animation-name: flying-left;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.anigallery1,
+.anigallery2 {
+	left: 300px;
+}
+
+.anigallery3,
+.anigallery4 {
+	right: 300px;
+}
+
+/*Sponsor & Media Partner*/
+
+#sponsor {
+	min-height: 200vh;
+	background-image: url(../img/bg-footer.png);
+	overflow: hidden;
+}
+
+#sponsor .container {
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+iframe {
+	border-radius: 5px;
+}
+
+.panel-group .panel {
+	margin-bottom: 20px;
+}
+
+.panel-default .panel-heading {
+	color: #225b6d;
+}
+
+.panel-default {
+	color: #000;
+}
+
+.panel-heading i {
+	margin-right: 10px;
+}
+
+.copyright {
+	text-align: center;
+	padding: 10px;
+}
+
+/*Footer*/
+
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	padding: 30px 10px;
+	z-index: 1;
+}
+
+footer img {
+	width: 800px;
+	margin: auto;
+}
+
+.candi {
+	background-image: url(../img/animation\ footer/1.png);
+	width: 657px;
+	height: 565px;
+	bottom: -250px;
+	right: -250px;
+	animation-name: zooming;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+/*CSS Animations*/
+
+@keyframes floating {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes flying-right {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(40px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes flying-left {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(-40px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes zooming {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes anihome2 {
+	0% {
+		left: 50%;
+	}
+	100% {
+		left: 45%;
+	}
+}
+
+@keyframes anihome3 {
+	0% {
+		left: 50%;
+	}
+	100% {
+		left: 55%;
+	}
+}
+
+/*CSS Breakpoints*/
+
+@media (max-width: 1200px) {
+	#about {
+		background-position-y: 80px;
+	}
+	.description {
+		left: 100px;
+	}
+	.bhinneka {
+		right: 100px
+	}
+	.anibionix {
+		width: 472px;
+		height: 339px;
+	}
+	.aniicon {
+		width: 431px;
+		height: 276px;
+	}
+	.anigallery1,
+	.anigallery2 {
+		left: 150px;
+	}
+	.anigallery3,
+	.anigallery4 {
+		right: 150px;
+	}
+}
+
+@media (max-width: 992px) {
+	h1 {
+		font-size: 30px;
+	}
+	#home .logo-ise {
+		left: auto;
+		right: 50px;
+	}
+	#home .socmed {
+		top: 10%;
+	}
+	#about .container {
+		padding: 0 50px 150px 50px;
+	}
+	#bionix .container,
+	#icon .container {
+		padding: 0 50px;
+	}
+	.description {
+		position: static;
+		width: 100%;
+		text-align: justify;
+	}
+	.bhinneka {
+		position: static;
+		width: 100%;
+		text-align: justify;
+		margin-top: 20px;
+	}
+	#bionix .container-head,
+	#icon .container-head {
+		text-align: center;
+	}
+	#bionix img,
+	#icon img {
+		margin: 30px 0;
+	}
+	#bionix .wrapper,
+	#icon .wrapper {
+		margin: 50px 0;
+		line-height: normal;
+	}
+	#bionix button,
+	#icon button {
+		margin-top: 0;
+	}
+	.anigallery1,
+	.anigallery2 {
+		left: 100px;
+	}
+	.anigallery3,
+	.anigallery4 {
+		right: 100px;
+	}
+}
+
+@media (max-width: 768px) {
+	#home h1 {
+		font-size: 32px;
+	}
+	.anibionix {
+		width: 236px;
+		height: 170px;
+	}
+	.aniicon {
+		width: 216px;
+		height: 138px;
+	}
+	#bionix img,
+	#icon img {
+		width: 300px;
+		margin: 10px 0;
+	}
+	#bionix .wrapper,
+	#icon .wrapper {
+		margin: 20px 0;
+	}
+	.anigallery1,
+	.anigallery2 {
+		left: 40px;
+	}
+	.anigallery3,
+	.anigallery4 {
+		right: 40px;
+	}
+	.panel-group .panel {
+		margin-bottom: 0;
+	}
+	iframe {
+		height: 300px;
+	}
+}
+
+@media (max-width: 576px) {
+	.anihome1,
+	.anihome2,
+	.anihome3,
+	.anibionix,
+	.aniicon,
+	.anigallery1,
+	.anigallery1,
+	.anigallery2,
+	.anigallery3,
+	.anigallery4,
+	.candi {
+		animation: none;
+	}
+	body {
+		font-size: 16px;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	#home .logo-ise {
+		width: 100px;
+	}
+	#home h1 {
+		font-size: 26px;
+	}
+	#home .socmed {
+		top: 0;
+	}
+	.anihome1 {
+		width: 326px;
+		height: 350px;
+		left: initial;
+		right: -100px;
+	}
+	#about {
+		background-position-y: 150px;
+	}
+	#bionix .container,
+	#icon .container {
+		padding: 0 10px;
+	}
+	#bionix img,
+	#icon img {
+		width: 250px;
+		margin: 10px 0;
+	}
+	#bionix .container-wrapper,
+	#icon .container-wrapper {
+		padding-bottom: 50px;
+	}
+	.container-button {
+		text-align: center;
+	}
+	#gallery {
+		min-height: initial;
+	}
+	.anigallery1,
+	.anigallery2 {
+		left: -80px;
+	}
+	.anigallery3,
+	.anigallery4 {
+		right: -80px;
+	}
+	#gallery,
+	#sponsor .container {
+		min-height: initial;
+	}
+	#sponsor {
+		min-height: initial;
+	}
+}
+
+/*Iphone X*/
+
+@media (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	body {
+		font-size: 18px;
+	}
+}
+
+/*Iphone 5s*/
+
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+	body {
+		font-size: 14px;
+	}
+	#about .container {
+		padding: 0 10px 150px 10px;
+	}
+}
+
+/*Tablet*/
+
+@media (min-height: 1000px) {
+	body {
+		font-size: 24px;
+	}
+	#home h1 {
+		font-size: 48px;
+	}
+	h1 {
+		font-size: 36px;
+	}
+	#bionix img,
+	#icon img {
+		width: 400px;
+	}
+	#bionix .wrapper,
+	#icon .wrapper {
+		margin-top: 100px;
+	}
+	.anibionix {
+		width: 378px;
+		height: 271px;
+	}
+	.aniicon {
+		width: 345px;
+		height: 221px;
+	}
+	#gallery,
+	#sponsor .container {
+		min-height: initial;
+	}
+	#sponsor {
+		min-height: initial;
+	}
+	.candi {
+		display: none;
+	}
+}
+
+/*Ipad Pro*/
+@media (device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+	.full-section,
+	.container {
+		min-height: 70vh;
+	}
+}
+
+@media (max-width: 405px) {
+    button {
+        margin-bottom:15px;
+    }
+}
+
+/*Fix Overflow Y Scroll*/
+.row {
+ margin: 0;   
+}

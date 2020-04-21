@@ -1,0 +1,284 @@
+$green: #5ba109
+$darker: #002b33
+$ubuntu: 'Ubuntu', sans-serif
+  
+body, html
+  font-family: $ubuntu
+  font-size: 18px
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+button:focus
+  outline: 0
+input:focus
+  outline: 0
+textarea:focus
+  outline: 0
+section
+  background: #fefefe
+  min-height: 100vh
+  padding: 30px 0 80px 0
+  position: relative
+.container-fluid
+  padding-left: 50px
+  padding-right: 50px
+.mtb
+  margin: 30px 0
+h1
+  font-family: $ubuntu
+  font-size: 3rem
+  font-weight: bold
+.title-section
+  display: inline-block
+  border-bottom: 10px solid $green
+  line-height: 30px
+h2
+  font-size: 1.5rem
+h3
+  font-size: 1rem
+button
+  font-family: $ubuntu
+  font-size: 1rem
+  background: $green
+  background: -webkit-linear-gradient(to right, $darker, $green)
+  background: -moz-linear-gradient(to right, $darker, $green)
+  background: -ms-linear-gradient(to right, $darker, $green)
+  background: linear-gradient(to right, $darker, $green)
+  color: #ffffff
+  font-weight: bold
+  letter-spacing: 1px
+  padding: 15px 35px
+  border: none
+  border-radius: 20px
+  cursor: pointer
+  transition: 0.3s
+button:hover
+  padding: 15px 60px
+iframe
+  max-width: 100%
+.description
+  text-align: justify
+  line-height: 25px
+.img-fluid
+  max-width: 100%
+  height: auto
+
+
+// HOME
+section#home
+  background: url(../img/SVG/bg-home.svg)
+  background-position: right top
+  background-repeat: no-repeat
+  padding-top: 0
+  h1
+    font-size: 5rem
+    margin-top: 100px
+    margin-bottom: 0
+nav ul
+  list-style-type: none
+  padding: 50px 0
+  font-weight: medium
+  text-align: right
+  li
+    display: inline-block
+    margin: 0 20px
+    a
+      color: #ffffff
+      text-decoration: none
+      transition: 0.3s
+    a:visited
+      color: #ffffff
+    a:hover
+      border-bottom: 5px solid $green
+.margin-left
+  margin-left: 50px
+
+// WHAT
+section#what
+  background: url(../img/SVG/bg-what.svg)
+  background-position: bottom
+  background-repeat: no-repeat
+  text-align: center
+  .description
+    width: 800px
+    max-width: 100%
+    background-color: $green
+    color: #ffffff
+    box-shadow: 5px 5px $darker
+    border-radius: 10px
+    margin: auto
+    padding: 20px
+#teaser
+  display: block
+  margin: 100px auto
+  box-shadow: 1px 1px 10px $darker
+
+// EVENT
+section#event
+  background: url(../img/SVG/bg-event.svg)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  text-align: center
+  h2
+    margin: 40px
+  .logo-event
+    height: 100px
+  button
+    font-size: 0.8rem
+    font-weight: normal
+    padding: 10px 20px
+
+// ABOUT
+section#about
+  .group-img
+    margin-top: 50px
+    img
+      height: 100px
+      margin-right: 30px
+  .v-about
+    width: 500px
+    display: block
+    margin: auto
+
+// SPONSOR
+section#sponsor
+  position: relative
+  .v-sponsor
+    position: absolute
+    right: -100px
+    bottom: 50px
+    width: 500px
+      
+// CONTACT
+section#contact
+  background: url(../img/SVG/bg-contact.svg)
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: cover
+  text-align: center
+  padding-bottom: 200px
+  form
+    margin: 50px 0
+  .form-control
+    display: block
+    width: 100%
+    height: calc(2.25rem + 2px)
+    padding: 1.5rem
+    font-family: $ubuntu
+    font-size: 0.8rem
+    line-height: 1.5
+    color: #495057
+    background-color: #fff
+    background-clip: padding-box
+    border: 1px solid #ced4da
+    border-radius: 1rem
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+  .form-group
+    margin-bottom: 1rem
+  textarea.form-control
+    resize: vertical
+    height: 200px
+  button
+    margin-top: 50px
+footer 
+  position: absolute
+  width: 100%
+  font-size: 20px
+  ul
+    list-style-type: none
+    padding: 50px 0
+    font-weight: medium
+    text-align: center
+    li
+      display: inline-block
+      margin: 0 20px
+      a
+        display: inline-block
+        color: #ffffff
+        text-decoration: none
+        background-color: #000000
+        width: 50px
+        height: 50px
+        line-height: 50px
+        border-radius: 50%
+        transition: 0.3s
+      a:visited
+        color: #ffffff
+      a:hover
+        background-color: $darker
+
+// Media Query
+// Large Screen Only
+@media (min-width: 992px)
+  section#home .v-home
+    transform: scale(1.2)
+@media (min-width: 1100px)
+  section#home .v-home
+    transform: scale(1.5)
+    transform-origin: right center
+// LG
+@media (max-width: 992px)
+  section#home .v-home
+    width: 400px
+    display: block
+    margin: auto
+  nav
+    display: none
+// MD
+@media (max-width: 768px)
+  section#home 
+    background: none
+    h1
+      font-size: 3.5rem
+      margin-top: 50px
+  section#about
+    .group-img
+      text-align: center
+    .v-about
+      width: 400px
+      display: block
+      margin: auto
+  section#sponsor 
+    padding-bottom: 300px
+    .v-sponsor
+      width: 450px
+// SM
+@media (max-width: 576px)
+  h1
+    text-align: center
+    font-size: 2.5rem
+  .description
+    text-align: left
+  section#home h1
+    text-align: left
+  .margin-left
+    margin-left: 0
+  section#about 
+    .group-img img
+      display: block
+      margin: 50px auto
+    .description
+      margin-top: 100px
+  section#sponsor
+    padding-bottom: 500px
+    h1
+      text-align: left
+// XS
+@media (max-width: 360px)
+  .container-fluid
+    padding-left: 30px
+    padding-right: 30px
+  button
+    padding: 10px 30px
+  button:hover
+    padding: 10px 50px
+  section#home h1
+    font-size: 2.5rem
+  section#sponsor .v-sponsor
+    width: 400px
+@media (max-width: 300px)
+  .container-fluid
+    padding-left: 10px
+    padding-right: 10px
+        

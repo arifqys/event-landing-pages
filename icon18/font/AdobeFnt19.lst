@@ -1,0 +1,210 @@
+%!Adobe-FontList 1.19
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\.htaccess
+FileModTime:1531051794
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HKGrotesk-Medium
+FamilyName:HK Grotesk
+StyleName:Medium
+FullName:HK Grotesk Medium
+MenuName:HK Grotesk Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\HKGrotesk-Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:68216
+FileModTime:1531051794
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,HK Grotesk Medium
+NameArray:0,Win,1,HK Grotesk Medium
+NameArray:0,Win,16,HK Grotesk
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Metropolis-Bold
+FamilyName:Metropolis
+StyleName:Bold
+FullName:Metropolis Bold
+MenuName:Metropolis
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\Metropolis-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:23664
+FileModTime:1531051794
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Metropolis Bold
+NameArray:0,Win,1,Metropolis
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Metropolis-Medium
+FamilyName:Metropolis
+StyleName:Medium
+FullName:Metropolis Medium
+MenuName:Metropolis Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\Metropolis-Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:23240
+FileModTime:1531051814
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Metropolis Medium
+NameArray:0,Win,1,Metropolis Medium
+NameArray:0,Win,16,Metropolis
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\webfonts\fa-brands-400.eot
+FileModTime:1531051983
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FontAwesome5BrandsRegular
+FamilyName:Font Awesome 5 Brands
+StyleName:Regular
+FullName:Font Awesome 5 Brands Regular
+MenuName:Font Awesome 5 Brands
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\webfonts\fa-brands-400.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:111384
+FileModTime:1531051961
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Font Awesome 5 Brands Regular
+NameArray:0,Win,1,Font Awesome 5 Brands
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\webfonts\fa-brands-400.woff
+FileModTime:1531051940
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\webfonts\fa-brands-400.woff2
+FileModTime:1531051940
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\webfonts\fa-regular-400.eot
+FileModTime:1531051962
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\webfonts\fa-regular-400.svg
+FileModTime:1531051920
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\webfonts\fa-regular-400.woff2
+FileModTime:1531051858
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\webfonts\fa-solid-900.eot
+FileModTime:1531051858
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\webfonts\fa-solid-900.svg
+FileModTime:1531051857
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FontAwesome5FreeSolid
+FamilyName:Font Awesome 5 Free
+StyleName:Solid
+FullName:Font Awesome 5 Free Solid
+MenuName:Font Awesome 5 Free
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\webfonts\fa-solid-900.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:132920
+FileModTime:1531051877
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Font Awesome 5 Free Solid
+NameArray:0,Win,1,Font Awesome 5 Free
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\webfonts\fa-solid-900.woff
+FileModTime:1531051857
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\webfonts\fa-solid-900.woff2
+FileModTime:1531051857
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Project\ISE 2018\icon.ise-its.com\Font\fontawesome\css\fontawesome-all.min.css
+FileModTime:1531051856
+%EndFont
+
