@@ -1,18 +1,27 @@
 # landing-pages
 Collection of landing pages portfolio.
 
-# Information Systems Expo 2018
+## Information Systems Expo 2018
+![ss](./ise18/screenshoot.png "Preview")
 Demo URL https://cust-landing-pages.netlify.app/ise18/
 
-# IT Convention 2018
+## IT Convention 2018
+![ss](./icon18/screenshoot.png "Preview")
 Demo URL https://cust-landing-pages.netlify.app/icon18/
 
-# Petrolium Integrated Days 2019
+## Petrolium Integrated Days 2019
+![ss](./petrolida/screenshoot.png "Preview")
 Demo URL https://cust-landing-pages.netlify.app/petrolida/
-
-# SAMPAN 2019
+___
+## SAMPAN 2019
+![ss](./sampan/screenshoot.png "Preview")
 Demo URL https://cust-landing-pages.netlify.app/sampan/
-
-# Chernival 2020
+___
+## Information Systems Expo 2019
+![ss](./ise19/screenshoot.png "Preview")
+Demo URL https://cust-landing-pages.netlify.app/sampan/
+___
+## Chernival 2020
+![ss](./chernival/screenshoot.png "Preview")
 Demo URL https://cust-landing-pages.netlify.app/chernival/
 
