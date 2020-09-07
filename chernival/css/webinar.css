@@ -1,0 +1,55 @@
+/* General */
+html, body {
+  background-color: #eeeeee;
+}
+h1 {
+  font-size: 4em;
+}
+h3 {
+  font-size: 24px;
+}
+
+/* Home */
+#home {
+  height: initial;
+  max-height: none;
+}
+#webinar-home {
+  background-image: url('../img/webinar/bg.png');
+  background-position: bottom center;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 200px;
+}
+#webinar-home .container {
+  color: #ffffff;
+  padding-top: 200px;
+}
+#webinar-home .container h1 {
+  font-family: 'Brandon_blk';
+  font-size: 3em;
+  line-height: 1em;
+  margin: 15px 0;
+}
+#webinar-home .container h1 {
+  font-family: 'Brandon_blk';
+  font-size: 3em;
+  line-height: 1em;
+  margin: 15px 0;
+}
+#webinar-home img {
+  display: block;
+  margin: auto;
+  width: 200px;
+  max-width: 100%;
+}
+#webinar-home .register {
+  background-color: rgba(101, 47, 142, 1);
+  font-size: 24px;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}

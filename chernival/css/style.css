@@ -69,6 +69,13 @@ button:hover {
     background-color: rgba(255, 255, 255, 1);
     color: #000000;
 }
+.btn-webinar {
+    background-color: rgba(101, 47, 142, 1);
+}
+.btn-webinar:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #000000;
+}
 img {
     display: block;
     margin: auto;
@@ -228,8 +235,9 @@ img {
     background: url('../img/slider2.webp');
     background-position: right bottom;
 }
-#slider .bg-closing {
-    background-color: #eeeeee;
+#slider .bg-webinar {
+    background: url('../img/slider3.webp');
+    background-position: -200px center;
 }
 #slider .text-content {
     position: absolute;
@@ -327,6 +335,33 @@ img {
 }
 #icecc .btn-icecc:hover {
     background-color:  rgba(68, 194, 194, 0.3);
+    color: #000000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* WEBINAR */
+.asset-webinar {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 30%;
+    animation: up-down 2s infinite alternate ease-in-out;
+}
+.asset-webinar2 {
+    position: absolute;
+    top: 20px;
+    left: -80px;
+    z-index: -1;
+}
+#webinar .container-button {
+    text-align: right;
+}
+#webinar button {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+#webinar .btn-webinar:hover {
+    background-color:  rgba(101, 47, 142, 0.3);
     color: #000000;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -507,9 +542,12 @@ span.hr {
     #home .menu-mobile {
         top: 80px;
     }
-    #slider .bg-nopec, #slider .bg-icecc, #slider .bg-closing {
+    #slider .bg-nopec, #slider .bg-icecc {
         background-size: cover;
         background-position: center -80px;
+    }
+    #slider .bg-webinar {
+        background-position: center -150px;
     }
     #slider .bg {
         background-image: url(../img/bg-slider-mobile.webp);
@@ -529,6 +567,9 @@ span.hr {
         box-sizing: border-box;
         z-index: 10;
     }
+    #slider .text-content h5 {
+        letter-spacing: 5px;
+    }
     #slider .text-content h1 {
         font-size: 3em;
     }
@@ -538,7 +579,7 @@ span.hr {
     .asset-slider {
         display: none;
     }
-    #nopec .container-button, #icecc .container-button {
+    #nopec .container-button, #icecc .container-button, #webinar .container-button {
         text-align: center;
     }
     .swiper-button-next:after, .swiper-button-prev:after {
