@@ -596,7 +596,7 @@ span.hr {
         left: 5px;
         right: auto;
     }
-    .asset-nopec, .asset-icecc {
+    .asset-nopec, .asset-icecc, .asset-webinar {
         animation: none;
     }
 }
