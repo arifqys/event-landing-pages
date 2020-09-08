@@ -547,7 +547,8 @@ span.hr {
         background-position: center -80px;
     }
     #slider .bg-webinar {
-        background-position: center -150px;
+        background-size: 600px;
+        background-position: center -50px;
     }
     #slider .bg {
         background-image: url(../img/bg-slider-mobile.webp);
