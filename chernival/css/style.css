@@ -213,10 +213,11 @@ img {
 }
 #slider .bg {
     background: url('../img/bg-slider.webp');
+    background-size: cover;
+    background-position: right bottom;
     position: absolute;
     height: 100%;
     width: 55%;
-    background-position: right bottom;
     bottom: 0;
     z-index: 1;
 }
@@ -236,8 +237,16 @@ img {
     background-position: right bottom;
 }
 #slider .bg-webinar {
+    position: relative;
+}
+#slider .bg-webinar-dekstop {
     background: url('../img/slider3.webp');
-    background-position: -200px center;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    right: 0;
 }
 #slider .text-content {
     position: absolute;
@@ -547,14 +556,19 @@ span.hr {
         background-position: center -80px;
     }
     #slider .bg-webinar {
+        background: url('../img/slider3.webp');
         background-size: 600px;
         background-position: center -50px;
     }
+    #slider .bg-webinar-dekstop {
+        display: none;
+    }
     #slider .bg {
         background-image: url(../img/bg-slider-mobile.webp);
+        background-size: cover;
+        background-position: center top;
         height: 55%;
         width: 100%;
-        background-position: center top;
         overflow: hidden;
     }
     #slider .text-content {
